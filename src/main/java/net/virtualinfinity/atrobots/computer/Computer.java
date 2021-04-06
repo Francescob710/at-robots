@@ -232,7 +232,7 @@ public class Computer implements PortListener, Restartable {
     }
 
     public PortHandler createDefaultPortHandler() {
-        return new Computer().setPortListener(Computer.this);
+        return new InvalidPort().setPortListener(Computer.this);
     }
 
     public MemoryRegion getCommQueueMemoryRegion() {
